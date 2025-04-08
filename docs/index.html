@@ -3,311 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Last.fm Discord Bot - Privacy Policy</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        :root {
-            --primary-color: #D51007;
-            --secondary-color: #3498DB;
-            --dark-bg: #23272A;
-            --light-text: #FFFFFF;
-            --accent-color: #2ECC71;
-            --section-bg: #2C2F33;
-            --border-radius: 8px;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: var(--dark-bg);
-            color: var(--light-text);
-            line-height: 1.6;
-        }
-        
-        header {
-            background-color: var(--primary-color);
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1rem;
-        }
-        
-        .logo img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-right: 1rem;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        h2 {
-            font-size: 1.8rem;
-            margin: 2rem 0 1rem;
-            color: var(--secondary-color);
-        }
-        
-        p {
-            margin-bottom: 1rem;
-        }
-        
-        .card {
-            background-color: var(--section-bg);
-            border-radius: var(--border-radius);
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        ul, ol {
-            margin-left: 2rem;
-            margin-bottom: 1rem;
-        }
-        
-        li {
-            margin-bottom: 0.5rem;
-        }
-        
-        .action-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin: 2rem 0;
-            justify-content: center;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 1.5rem;
-            border-radius: var(--border-radius);
-            background-color: var(--secondary-color);
-            color: var(--light-text);
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            text-align: center;
-        }
-        
-        .btn-primary {
-            background-color: var(--primary-color);
-        }
-        
-        .btn-accent {
-            background-color: var(--accent-color);
-        }
-        
-        .btn:hover {
-            opacity: 0.9;
-            transform: translateY(-2px);
-        }
-        
-        footer {
-            text-align: center;
-            padding: 2rem;
-            margin-top: 2rem;
-            background-color: var(--section-bg);
-        }
-        
-        footer a {
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-        
-        .last-updated {
-            font-style: italic;
-            color: #ccc;
-            text-align: center;
-            margin-top: 2rem;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
-            
-            .action-buttons {
-                flex-direction: column;
-            }
-            
-            .btn {
-                width: 100%;
-            }
-        }
-    </style>
+    <title>Last.fm Bot Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="https://i.imgur.com/XeyHdDo.png" alt="Last.fm Discord Bot Logo">
-                <h1>Last.fm Discord Bot</h1>
-            </div>
-            <p>Connecting your Discord experience with Last.fm and Anime</p>
-        </div>
-    </header>
-    
     <div class="container">
-        <div class="card">
-            <h2>🔒 Privacy Policy</h2>
-            <p>Thank you for using our Discord bot. We respect your privacy and are committed to protecting your personal data.</p>
-            
-            <div class="action-buttons">
-                <a href="#overview" class="btn">Quick Overview</a>
-                <a href="#full-policy" class="btn">Full Policy</a>
-                <a href="#data-deletion" class="btn">Data Deletion</a>
-                <a href="https://discord.gg/fWNrjjw4" class="btn btn-primary">Join Support Server</a>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <div class="logo">
+                        <img src="images/ruri.jpg" alt="Bot Logo">
+                        <div class="logo-text">
+                            <span class="logo-title">Last.fm Bot</span>
+                            <span class="logo-subtitle">Your ultimate Discord companion for Last.fm integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-center">
+                    <div class="nav-links">
+                        <a href="#home" class="active">Home</a>
+                        <a href="#commands">Commands</a>
+                        <a href="#features">Features</a>
+                        <a href="#about">About</a>
+                        <a href="#privacy">Privacy</a>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div class="social-links">
+                        <a href="#" title="Discord" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" title="GitHub" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" title="Twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </div>
-        
-        <div class="card" id="overview">
-            <h2>📝 Overview</h2>
-            
-            <h3>Data We Collect</h3>
-            <ul>
-                <li>Discord User ID</li>
-                <li>Last.fm username (when provided)</li>
-                <li>Server settings (prefix, channel IDs)</li>
-                <li>Command usage statistics</li>
-            </ul>
-            
-            <h3>How We Use Data</h3>
-            <ul>
-                <li>Connect your Discord account with Last.fm</li>
-                <li>Provide personalized music recommendations</li>
-                <li>Display listening statistics</li>
-                <li>Remember your preferences</li>
-            </ul>
-            
-            <h3>Data Security</h3>
-            <p>Your data is stored securely and is not shared with third parties except when necessary for the functioning of our services (e.g., API requests to Last.fm).</p>
-        </div>
-        
-        <div class="card" id="full-policy">
-            <h2>📄 Complete Privacy Policy</h2>
-            
-            <h3>1. Introduction</h3>
-            <p>This privacy policy explains how we collect, use, and protect your personal information when you use our Discord bot. By using the bot, you consent to the data practices described in this policy.</p>
-            
-            <h3>2. Information We Collect</h3>
-            <p><strong>2.1 User Information:</strong></p>
-            <ul>
-                <li>Discord User ID</li>
-                <li>Last.fm username (when provided)</li>
-                <li>Command preferences</li>
-                <li>Feature usage patterns</li>
-            </ul>
-            
-            <p><strong>2.2 Server Information:</strong></p>
-            <ul>
-                <li>Server ID</li>
-                <li>Channel IDs for specific features</li>
-                <li>Server prefix settings</li>
-                <li>Feature configurations</li>
-            </ul>
-            
-            <h3>3. Purpose of Data Collection</h3>
-            <p>We collect this information to:</p>
-            <ul>
-                <li>Connect your Discord account with your Last.fm profile</li>
-                <li>Provide personalized music recommendations and statistics</li>
-                <li>Remember your preferences and settings</li>
-                <li>Improve the bot based on usage patterns</li>
-                <li>Ensure proper functioning of all features</li>
-            </ul>
-            
-            <h3>4. Data Storage and Security</h3>
-            <p>All collected data is stored securely and is only accessible to bot developers for maintenance and support purposes. We implement appropriate technical measures to protect your personal data against unauthorized access.</p>
-            
-            <h3>5. Data Sharing</h3>
-            <p>We do not sell or share your data with third parties except when necessary for the functioning of our services (e.g., API requests to Last.fm or Discord). Your Last.fm username is only used to retrieve your public music data from Last.fm.</p>
-            
-            <h3>6. Your Rights</h3>
-            <p>You have the right to:</p>
-            <ul>
-                <li>Access your personal data</li>
-                <li>Request deletion of your data</li>
-                <li>Opt out of specific features</li>
-            </ul>
-            <p>You can manage these rights using the <code>!datadelete</code> command within Discord.</p>
-            
-            <h3>7. Data Retention</h3>
-            <p>We retain your data as long as needed to provide you with our services. If you delete your data or stop using the bot, we will delete or anonymize your personal information within 30 days.</p>
-            
-            <h3>8. Updates to Privacy Policy</h3>
-            <p>We may update this privacy policy from time to time. Any changes will be posted in the bot and on our website. Continued use of the bot after such changes constitutes your acceptance of the updated policy.</p>
-            
-            <h3>9. Contact Information</h3>
-            <p>If you have any questions or concerns about our privacy policy or data practices, please contact us through our support server or via GitHub issues.</p>
-        </div>
-        
-        <div class="card" id="data-deletion">
-            <h2>🗑️ Data Deletion Guide</h2>
-            <p>Here's how you can delete your data from our services.</p>
-            
-            <h3>Using the Deletion Command</h3>
-            <p>Use <code>!datadelete</code> in any channel where the bot can read and respond to your messages. This command will guide you through the data deletion process.</p>
-            
-            <h3>What Gets Deleted</h3>
-            <p>When you request data deletion, we remove:</p>
-            <ul>
-                <li>Your Last.fm username</li>
-                <li>Rich presence settings</li>
-                <li>Custom preferences</li>
-                <li>Any other personal identifiers</li>
-            </ul>
-            
-            <h3>Deletion Timeframe</h3>
-            <p>Your data will be deleted immediately from our active systems. Any backups containing your data will be purged within 30 days.</p>
-            
-            <h3>Important Note</h3>
-            <p>Data deletion is permanent and cannot be undone. You'll need to set up your preferences again if you want to use the bot in the future.</p>
-        </div>
-        
-        <p class="last-updated">Last Updated: April 2025</p>
+        </nav>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Last.fm Bot</h1>
+                <p>Your ultimate Discord companion for Last.fm integration</p>
+                <div class="cta-buttons">
+                    <a href="#commands" class="btn primary">Get Started</a>
+                    <a href="https://discord.gg/fWNrjjw4" class="btn secondary">Join Support</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/ruri.jpg" alt="Bot Preview">
+            </div>
+        </section>
+
+        <section id="commands" class="commands">
+            <h2>Available Commands</h2>
+            <div class="command-grid">
+                <div class="command-card">
+                    <i class="fas fa-music"></i>
+                    <h3>!recent</h3>
+                    <p>View your recent tracks</p>
+                    <code>!recent [username]</code>
+                </div>
+                <div class="command-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>!topartists</h3>
+                    <p>See your top artists</p>
+                    <code>!topartists [username]</code>
+                </div>
+                <div class="command-card">
+                    <i class="fas fa-headphones"></i>
+                    <h3>!toptracks</h3>
+                    <p>View your top tracks</p>
+                    <code>!toptracks [username]</code>
+                </div>
+                <div class="command-card">
+                    <i class="fas fa-user"></i>
+                    <h3>!userinfo</h3>
+                    <p>Get user information</p>
+                    <code>!userinfo [username]</code>
+                </div>
+                <div class="command-card">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>!help</h3>
+                    <p>View all commands</p>
+                    <code>!help</code>
+                </div>
+                <div class="command-card">
+                    <i class="fas fa-sync"></i>
+                    <h3>!restart</h3>
+                    <p>Restart the bot</p>
+                    <code>!restart</code>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast Response</h3>
+                    <p>Quick and efficient command processing</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Beautiful Embeds</h3>
+                    <p>Aesthetic and informative message embeds</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure</h3>
+                    <p>Safe and reliable bot operations</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-sync"></i>
+                    <h3>24/7 Uptime</h3>
+                    <p>Always available when you need it</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About the Bot</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Last.fm Bot is a powerful Discord bot that integrates with Last.fm to provide music statistics and information. It's designed to be user-friendly and feature-rich, making it the perfect companion for music lovers on Discord.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Active Servers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Uptime</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Commands</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/ruri.jpg" alt="About Bot">
+                </div>
+            </div>
+        </section>
+
+        <section id="privacy" class="privacy">
+            <h2>Privacy Policy</h2>
+            <div class="privacy-content">
+                <div class="privacy-text">
+                    <p>At Last.fm Bot, we take your privacy seriously. We collect minimal data required to provide our services, and we're committed to protecting your information.</p>
+                    <ul>
+                        <li>We only store your Discord ID and Last.fm username with your permission</li>
+                        <li>Your data is never shared with third parties</li>
+                        <li>You can delete your data at any time</li>
+                    </ul>
+                    <div class="privacy-buttons">
+                        <a href="privacy.html" class="btn primary">View Full Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="privacy-image">
+                    <i class="fas fa-shield-alt privacy-icon"></i>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="images/ruri.jpg" alt="Bot Logo">
+                        <span>Last.fm Bot</span>
+                    </div>
+                    <p class="footer-description">Your ultimate Discord companion for Last.fm integration</p>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#commands">Commands</a>
+                        <a href="#features">Features</a>
+                        <a href="#about">About</a>
+                        <a href="#privacy">Privacy</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Last.fm Bot</p>
+                    <span class="separator">•</span>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Last.fm Discord Bot. All rights reserved.</p>
-            <p>
-                <a href="https://github.com/lastfm-discord-bot" target="_blank">GitHub</a> |
-                <a href="https://discord.gg/lastfm" target="_blank">Discord Server</a>
-            </p>
-        </div>
-    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.hero-content, .hero-image, .command-card, .feature-card, .about-content, .privacy-content').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll to top
+        const scrollToTop = document.createElement('button');
+        scrollToTop.innerHTML = '↑';
+        scrollToTop.className = 'scroll-to-top';
+        document.body.appendChild(scrollToTop);
+
+        scrollToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTop.style.opacity = '1';
+                scrollToTop.style.visibility = 'visible';
+            } else {
+                scrollToTop.style.opacity = '0';
+                scrollToTop.style.visibility = 'hidden';
+            }
+        });
+    </script>
 </body>
 </html> 
